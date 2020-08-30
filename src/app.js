@@ -5,6 +5,9 @@
 // nodemon .\src\app.js -e js,hbs,css
 // Best practice - required core modules before NPM modules
 // Heroku links - https://wall-complete-node-weather-app.herokuapp.com/ | https://git.heroku.com/wall-complete-node-weather-app.git
+// To push to heroku: 
+// git remote
+// git push heroku master
 const path = require('path')
 
 const express = require('express')
