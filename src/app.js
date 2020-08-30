@@ -4,6 +4,7 @@
 // nodemon .\src\app.js
 // nodemon .\src\app.js -e js,hbs,css
 // Best practice - required core modules before NPM modules
+// Heroku links - https://wall-complete-node-weather-app.herokuapp.com/ | https://git.heroku.com/wall-complete-node-weather-app.git
 const path = require('path')
 
 const express = require('express')
@@ -16,6 +17,9 @@ const forecast = require('./utils/forecast')
 
 // Import the library then call the function to initialize
 const app = express()
+//Heroku config - the first half of the below line is the port we get from Heroku
+// if this is not provided then port 8080 is used
+const port = process.env.PORT || 8080
 
 ///////////////////////////////////
 // Define paths for express config
@@ -140,8 +144,6 @@ app.get('*', (req, res) => {
 })
 
 // Start the server
-app.listen(8080, () => {
-    console.log('Server is up on port 8080')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })
-
-
