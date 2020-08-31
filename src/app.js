@@ -2,7 +2,8 @@
 // https://stackoverflow.com/questions/16460163/ps1-cannot-be-loaded-because-the-execution-of-scripts-is-disabled-on-this-syste
 // Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 // nodemon .\src\app.js
-// nodemon .\src\app.js -e js,hbs,css
+// nodemon .\src\app.js -e js,hbs,css or nodemon ./src/app.js -e js,hbs,css
+// Following the changes to app.json, can run npm run dev
 // Best practice - required core modules before NPM modules
 // Heroku links - https://wall-complete-node-weather-app.herokuapp.com/ | https://git.heroku.com/wall-complete-node-weather-app.git
 // To push to heroku: 
