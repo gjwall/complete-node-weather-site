@@ -1,6 +1,7 @@
 const request = require('request')
 
 const forecast = (latitude, longitude, callback) => {
+// URL for testing: http://api.weatherstack.com/current?access_key=71e6621645db9f02170819c978d2f16b&query=44.1545,-75.7088&units=m
     const domain = 'http://api.weatherstack.com/current'
     // access key could (and should) be a parameter
     const access_key = '?access_key=' + '71e6621645db9f02170819c978d2f16b'
